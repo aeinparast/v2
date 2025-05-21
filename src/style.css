@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap');
+@import "tailwindcss";
+
+
+
+@layer base {
+  html {
+    font-size: 16px;
+  }
+
+  body {
+    font-family: 'Noto Sans Arabic', sans-serif;
+    color: #333;
+    background-color: #f8f8f8;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: bold;
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+}
