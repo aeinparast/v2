@@ -8,19 +8,29 @@
 </head>
 
 <body dir="rtl">
-  <div id="app" class="w-full min-h-screen bg-violet-950 pt-5">
-    <nav class="container bg-white/30 mx-auto rounded-md  backdrop-blur-3xl h-16 flex items-center pr-14">
-      <div class="">
+  <div id="app" class="w-full relative">
+    <!-- Nav is now outside the hero -->
+    <nav
+      class="container bg-white/30 fixed top-10 left-0 right-0 mx-auto rounded-md backdrop-blur-3xl h-16 items-center pr-14 flex border border-white z-50">
+      <div class="flex gap-10 items-center">
+        <img src="/img/logo.png" alt="Emarate Aria Logo" class="w-20 h-auto">
         <ul class="flex text-white gap-7">
           <li>خانه</li>
           <li>املاک</li>
-          <li>مشاوران</li>
+          <li>مشاورین</li>
           <li>تماس‌ با ما</li>
         </ul>
       </div>
     </nav>
+
+    <!-- Hero section -->
+    <section class="bg-cover bg-no-repeat bg-center bg-fixed min-h-screen flex items-center pr-56 relative" id="hero">
+      <h1 class="text-white font-bold text-6xl">گروه مشاورین املاک<br> عمارت آریا</h1>
+      <div class="bg-white h-16 w-96 absolute m-auto bottom-0 rounded-t-md left-0 right-0"></div>
+    </section>
   </div>
   <script type="module" src="/src/main.ts"></script>
 </body>
+
 
 </html>

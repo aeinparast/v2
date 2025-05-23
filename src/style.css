@@ -27,3 +27,8 @@
     margin-bottom: 1em;
   }
 }
+
+
+#hero {
+  background-image: url('/img/hero.webp');
+}
