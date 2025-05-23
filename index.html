@@ -11,23 +11,66 @@
   <div id="app" class="w-full relative">
     <!-- Nav is now outside the hero -->
     <nav
-      class="container bg-white/30 fixed top-10 left-0 right-0 mx-auto rounded-md backdrop-blur-3xl h-16 items-center pr-14 flex border border-white z-50">
+      class="container absolute top-10 left-0 right-0 mx-auto rounded-md  h-16 items-center pr-14 flex justify-between z-50 text-white animate__animated animate__fadeIn">
       <div class="flex gap-10 items-center">
         <img src="/img/logo.png" alt="Emarate Aria Logo" class="w-20 h-auto">
-        <ul class="flex text-white gap-7">
+        <ul class="flex  gap-7">
           <li>خانه</li>
           <li>املاک</li>
           <li>مشاورین</li>
           <li>تماس‌ با ما</li>
         </ul>
       </div>
+      <div class="flex pl-5  items-center gap-4">
+        <div class="">EN</div>
+        <div class="border rounded-md p-2 border-current bg-white/30 backdrop-blur-3xl">درخواست مشاوره</div>
+      </div>
     </nav>
 
     <!-- Hero section -->
-    <section class="bg-cover bg-no-repeat bg-center bg-fixed min-h-screen flex items-center pr-56 relative" id="hero">
-      <h1 class="text-white font-bold text-6xl">گروه مشاورین املاک<br> عمارت آریا</h1>
-      <div class="bg-white h-16 w-96 absolute m-auto bottom-0 rounded-t-md left-0 right-0"></div>
+    <section
+      class="bg-cover bg-no-repeat bg-center min-h-screen relative text-white grid grid-cols-12 w-full items-center"
+      id="hero">
+      <div class=" text-current flex flex-col  gap-10 animate__fadeIn  animate__animated col-start-3 col-end-7">
+        <h1 class="font-bold text-6xl">گروه مشاورین املاک<br> عمارت آریا</h1>
+        <p class="text-2xl">مرجعی مطمئن برای سرمایه‌گذاری و معامله املاک در تنکابن</p>
+        <div class="flex items-center gap-4">
+          <div class="border border-white p-2 rounded-sm backdrop-blur-3xl bg-white/30">تماس با دفتر</div>
+          <div class="border border-white p-2 rounded-sm backdrop-blur-3xl bg-white/30">درخواست مشاوره رایگان</div>
+        </div>
+      </div>
+      <div class="absolute bottom-20 left-56 flex gap-5">
+        <div class="hero__cards animate__animated animate__fadeInUp animate__delay-1s">
+          <div class="h-2/3"></div>
+          <div class="pr-2">
+            <h3 class="font-normal text-xl">فروش ویلا در تقی‌آباد</h3>
+            <div class="">15 میلیارد تومان</div>
+          </div>
+        </div>
+        <div class="hero__cards animate__animated animate__fadeInUp animate__delay-2s">
+          <div class="h-2/3"></div>
+          <div class="pr-2">
+            <h3 class="font-normal text-xl">فروش ویلا در تقی‌آباد</h3>
+            <div class="">15 میلیارد تومان</div>
+          </div>
+        </div>
+        <div class="hero__cards animate__animated animate__fadeInUp animate__delay-3s">
+          <div class="h-2/3"></div>
+          <div class="pr-2">
+            <h3 class="font-normal text-xl">فروش ویلا در تقی‌آباد</h3>
+            <div class="">15 میلیارد تومان</div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-white h-16 w-96 absolute m-auto bottom-0 rounded-t-md left-0 right-0 flex gap-5 justify-center items-center text-gray-500"
+        hidden>
+        <div class="">زمین</div>
+        <div class="">ویلا</div>
+        <div class="">پیمانکاری</div>
+      </div>
     </section>
+    <div class="min-h-screen w-full"></div>
   </div>
   <script type="module" src="/src/main.ts"></script>
 </body>

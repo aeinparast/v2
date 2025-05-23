@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap');
 @import "tailwindcss";
 
+:root {
+  --animate-delay: 0.5s;
+}
+
 
 
 @layer base {
@@ -29,6 +33,11 @@
 }
 
 
+
 #hero {
   background-image: url('/img/hero.webp');
+}
+
+.hero__cards {
+  @apply bg-white/30 backdrop-blur-lg w-56 h-64 rounded-sm p-1 hover:backdrop-blur-xl transition-all cursor-pointer;
 }
