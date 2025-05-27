@@ -45,3 +45,11 @@
 .features__cards--card {
   @apply w-72 h-96 bg-red-500 rounded-sm;
 }
+
+.mainSelectors__new--item {
+  @apply cursor-pointer border-b border-b-transparent transition-colors;
+}
+
+input[type="radio"]:checked~.mainSelectors__new--item {
+  @apply border-b-gray-800;
+}
